@@ -1,0 +1,13 @@
+{
+  "type": "record",
+  "name": "TickEvent",
+  "namespace": "aegis.market",
+  "fields": [
+    {"name": "symbol", "type": "string"},
+    {"name": "timestamp", "type": "long"},
+    {"name": "price", "type": "double"},
+    {"name": "volume", "type": "long", "default": 0},
+    {"name": "bid", "type": ["null", "double"], "default": null},
+    {"name": "ask", "type": ["null", "double"], "default": null}
+  ]
+}
